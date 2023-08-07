@@ -1,10 +1,18 @@
-<h1>APP component</h1>
+<h1 [class.text-red] ='bool'>APP component</h1>
+<h1 [style.color] =" bool ? 'red' :'blue' ">APP component</h1>
 
 {{  msgFromChild  }}
 
 <br/>
 
 {{ childOutput }}
+
+<img src="{{imgUrl}}" alt="image" height="300px" width="450px"> 
+<img [src]="imgUrl" alt="image" height="300px" width="450px"> 
+
+<button (click) = 'clickBtn()'>App button</button>
+
+<!-- -------- -->
 
 <app-navbar></app-navbar>
 <app-post [fromParent] = 'parentMessage' (messageEmitter) = 'receiveMessage($event)'></app-post>

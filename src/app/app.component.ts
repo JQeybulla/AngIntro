@@ -11,6 +11,10 @@ export class AppComponent implements AfterViewInit{
   title = 'AngIntro';
   msgFromChild!: string;
   childOutput!: string;
+  bool: boolean = true;
+
+  // ------
+  imgUrl: string = 'https://gas-kvas.com/uploads/posts/2023-02/1675470489_gas-kvas-com-p-c-fonovii-risunok-rabochego-stola-1.jpg'
 
   @ViewChild(PostComponent) childComp;
 
@@ -24,5 +28,9 @@ export class AppComponent implements AfterViewInit{
 
   receiveMessage($event){
     this.childOutput = $event;
+  }
+
+  clickBtn(){
+    
   }
 }
