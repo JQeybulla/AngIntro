@@ -2,8 +2,8 @@ import { Component } from "@angular/core";
 
 @Component({
     selector: 'app-navbar',
-    template: '<h1> Navbar Component </h1>',
-    styles: ['h1{color: red}']
+    templateUrl: './navbar.component.html',
+    styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
 

@@ -1,3 +1,10 @@
-<h1>AngulaR PROJECT</h1>
+<h1>APP component</h1>
+
+{{  msgFromChild  }}
+
+<br/>
+
+{{ childOutput }}
 
 <app-navbar></app-navbar>
+<app-post [fromParent] = 'parentMessage' (messageEmitter) = 'receiveMessage($event)'></app-post>
